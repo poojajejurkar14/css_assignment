@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Basic Css</title>
+    <style>
+        /* <!-- internal css --> */
+        h3 {
+            background-color: purple;
+        }
+
+        h2 {
+            /* background-color: purple;
+            background-color:rgb(255, 153, 153); */
+            background-color: hsl(281, 93%, 45%)
+        }
+
+        /* <!-- class selector --> */
+        .name {
+            background-color: aquamarine;
+        }
+
+        .name::after {
+            content: hello;
+        }
+
+        .education {
+            background-color: skyblue;
+        }
+
+        .workspace {
+            background-color: rgb(240, 183, 78);
+        }
+
+        /* <!-- id selector --> */
+        #intro {
+            background-color: yellowgreen;
+        }
+
+        #qualification,
+        span {
+            background-color: yellowgreen;
+        }
+
+        #work {
+            background-color: blueviolet;
+        }
+
+        .name::after {
+            content: hello;
+        }
+
+        body {
+            background-image: url("cat1.jpg");
+            background-repeat: no-repeat;
+            /* background-position: center; */
+            /* background-size: auto; */
+            background-size: cover;
+            /* background-size: 200px 200px; */
+            /* background-repeat:repeat ;
+            background-repeat:repeat-x ;
+            background-repeat:repeat-y ; */
+        }
+
+        .marqee1 {
+            /* background-color: yellow;  */
+            height: 70px;
+            width: 100%;
+            color: white;
+            direction: left;
+
+        }
+
+        .h5 {
+            color: white;
+            border: 1px solid red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- marqee element -->
+    <h5>hello</h5>
+    <marquee class="marqee1" style="behavior: sliding;">Good Morning</marquee>
+    <!-- inline css -->
+    <p>inline css</p>
+    <h3 style="background-color: purple; ">My name is: Pooja Jejurkar</h3>
+    <h2>i am a engineering graduate</h2>
+    <p style="text-align: center; background-color: rgb(155, 109, 228);">currently i am working in TCS</p>
+    <hr><br>
+
+    <!-- internal css -->
+    <p>internal css</p>
+    <h3 class="name">My name is: Pooja Jejurkar</h3>
+    <h2 class="education">i am a engineering graduate</h2>
+    <p class="workspace">currently i am working in TCS</p>
+    <hr><br>
+    <!-- class selector -->
+    <p>class selector</p>
+    <h3 style="background-color: purple;">My name is: Pooja Jejurkar</h3>
+    <h2 style="color: white ; background-color: red;">i am a engineering graduate</h2>
+    <p style="text-align: center; background-color: rgb(155, 109, 228);">currently i am working in TCS</p>
+    <hr><br>
+    <!-- id selector -->
+    <p>id selector</p>
+    <h3 id="intro">My name is: Pooja Jejurkar</h3>
+    <h2 id="qualification">i am a engineering graduate</h2>
+    <span>hello</span>
+    <p id="work">currently i am working in TCS</p>
+
+
+</body>
+
+</html>
